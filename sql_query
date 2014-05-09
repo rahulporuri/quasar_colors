@@ -1,10 +1,19 @@
+## it is suggested that you create an account on SDSS CASjobs III page and submit the following sql query there instead of running it on the SDSS skyserver page.
+## the result of the sql query is very large for the browser to handle and there's a good chance it will crash. 
+
 select
 plateX.plate, plateX.mjd, 
 PhotoObj.ra, PhotoObj.dec, PhotoObj.ObjID, 
 PhotoObj.modelMag_u, PhotoObj.modelMag_g, PhotoObj.modelMag_r, PhotoObj.modelMag_i, PhotoObj.modelMag_z, 
 specObj.fiberID, specObj.z
+
+## we have selected the above parameters for download.
+
 from
 PhotoObj, specObj, plateX
+
+## we want the above mentioned parameters from these data objects. refer to the SDSS schema browser regarding the data objects and the parameters available for download in them.
+
 where
 specObj.bestObjid = PhotoObj.ObjID 
 AND plateX.plateID = specObj.plateID 
@@ -15,3 +24,8 @@ AND PhotoObj.modelMag_g < 22.6
 AND PhotoObj.modelMag_r < 22.7 
 AND PhotoObj.modelMag_i < 22.4 
 AND PhotoObj.modelMag_z < 20.5
+
+## the first four options here are to make sure that we are getting information pertaining to quasars, whose redshift is determined without any errors and whose 
+## data is consistent across the different data objects mentioned - PhotoObj, specObj and plateX.
+## the remaining 5 limits set on SDSS u, g, r, i & z magnitudes are from the paper and are in place as the error in photometry is large beyond these values of 
+## apparent magnitude.
