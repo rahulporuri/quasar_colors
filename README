@@ -7,3 +7,5 @@ The sql query file is available in the directory under the same name. To underst
 colors.png is the u-g, g-r, r-i and i-z color vs redshift plot.
 colors.py is the python script to generate the figure. NOTE : pandas needs to be installed for the script to run.
 colors_of_quasars.ipynb is an ipython notebook regarding the same.
+you can access the ipython notebook using nbviewer at 
+http://nbviewer.ipython.org/github/rahulporuri/quasar_colors/blob/master/colors_of_quasars.ipynb
