@@ -1,0 +1,86 @@
+J/AJ/121/2308     Sloan Digital Sky Survey quasar photometry   (Richards+, 2001)
+================================================================================
+Colors of 2625 quasars at 0<z<5 measured in the
+Sloan Digital Sky Survey photometric system.
+    Richards G.T., Fan X., Schneider D.P., Vanden Berk D.E., Strauss M.A.,
+    York D.G., Anderson J.E.Jr, Anderson S.F., Annis J., Bahcall N.A.,
+    Bernardi M., Briggs J.W., Brinkmann J., Brunner R., Burles S., Carey L.,
+    Castander F.J., Connolly A.J., Crocker J.H., Csabai I., Doi M.,
+    Finkbeiner D., Friedman S.D., Frieman J.A., Fukugita M., Gunn J.E.,
+    Hindsley R.B., Ivezic Z., Kent S., Knapp G.R., Lamb D.Q., Leger R.F.,
+    Long D.C., Loveday J., Lupton R.H., McKay T.A., Meiksin A., Merrelli A.,
+    Munn J.A., Newberg H.J., Newcomb M., Nichol R.C., Owen R., Pier J.R.,
+    Pope A., Richmond M.W., Rockosi C.M., Schlegel D.J., Siegmund W.A., Smee S.,
+    Snir Y., Stoughton C., Stubbs C., Subbarao M., Szalay A.S., Szokoly G.P.,
+    Tremonti C., Uomoto A., Waddell P., Yanny B., Zheng W.
+   <Astron. J. 121, 2308 (2001)>
+   =2001AJ....121.2308R
+================================================================================
+ADC_Keywords: QSOs ; Surveys ; Photometry
+Keywords: catalogs - quasars: general - survey
+
+Abstract:
+    We present an empirical investigation of the colors of quasars in the
+    Sloan Digital Sky Survey (SDSS) photometric system. The sample studied
+    includes 2625 quasars with SDSS photometry: 1759 quasars found during
+    SDSS spectroscopic commissioning and SDSS follow-up observations on
+    other telescopes, 50 matches to FIRST quasars, 573 matches to quasars
+    from the NASA Extragalactic Database, and 243 quasars from two or more
+    of these sources. The quasars are distributed in a 2.5{deg} wide
+    stripe centered on the celestial equator covering ~529deg^2^.
+    Positions (accurate to 0.2") and SDSS magnitudes are given for the 898
+    quasars known prior to SDSS spectroscopic commissioning.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+table2.dat    135      898   SDSS (Sloan Digital Sky Survey) quasar photometry
+--------------------------------------------------------------------------------
+
+See also:
+  J/AJ/115/296  : SDSS new variables (Henden+ 1998)
+  J/AJ/119/2598 : u'g'r'i'z' photometry of LCRS galaxies (Sowards-Emmerd+, 2000)
+  J/AJ/121/2331 : Coma cluster SDSS spectrosc. commissioning (Castander+, 2001)
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label   Explanations
+--------------------------------------------------------------------------------
+   1- 30  A30   ---     Name    Quasar name
+  32- 36  F5.3  ---     z       Redshift
+  38- 39  I2    h       RAh     Right Ascension (J2000)
+  41- 42  I2    min     RAm     Right Ascension (J2000)
+  44- 48  F5.2  s       RAs     Right Ascension (J2000)
+      50  A1    ---     DE-     Sign of the Declination (J2000)
+  51- 52  I2    deg     DEd     Declination (J2000)
+  54- 55  I2    arcmin  DEm     Declination (J2000)
+  57- 60  F4.1  arcsec  DEs     Declination (J2000)
+  62- 65  F4.2  arcsec  DelPos  Difference between SDSS and cataloged positions
+  67- 71  F5.2  mag     u*mag   The SDSS u^*^ band photometry (1)
+  73- 77  F5.3  mag   e_u*mag   Uncertainty in umag
+  79- 83  F5.2  mag     g*mag   The SDSS g^*^ band photometry (1)
+  85- 89  F5.3  mag   e_g*mag   Uncertainty in gmag
+  91- 95  F5.2  mag     r*mag   The SDSS r^*^ band photometry (1)
+  97-101  F5.3  mag   e_r*mag   Uncertainty in rmag
+ 103-107  F5.2  mag     i*mag   The SDSS i^*^ band photometry (1)
+ 109-113  F5.3  mag   e_i*mag   Uncertainty in imag
+ 115-119  F5.2  mag     z*mag   The SDSS z^*^ band photometry (1)
+ 121-125  F5.3  mag   e_z*mag   Uncertainty in zmag
+ 127-130  F4.2  mag     RedVec  Reddening vector in E(g^*^ - r^*^)  (2)
+ 132-134  A3    ---   r_Name    Source catalog of each object (3)
+--------------------------------------------------------------------------------
+Note (1): SDSS magnitudes are based on the AB magnitude system Oke & Gunn
+     (1983ApJ...266..713O), and are given as asinh magnitudes
+     Lupton, Gunn, & Szalay (1999AJ....118.1406L).
+Note (2): As determined from Schlegel et al. (1998ApJ...500..525S).
+Note (3): Source catalog of each object:
+      1 = NED;
+      2 = SDSS.
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+================================================================================
+(End)                   Greg Schwarz [AAS],  Patricia Bauer [CDS]    30-Aug-2001
