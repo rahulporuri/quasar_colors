@@ -1,0 +1,94 @@
+www.astropython.org/resources
+
+distance = float(raw_input("print this statement"))
+
+fin = open('file.dat','r/w/a')
+lines = fin.readlines()
+
+import csv
+with open('file.csv', 'r') as f:
+	reader = csv.reader(f)
+	for row in reader:
+		print row
+
+reader = csv.reader(f,delimiter = ":")
+
+import numpy as np
+np.mean(list) or np.average(list) or np.median(list)
+
+import matplotlib.pyplot as plt
+plt.hist(data,bins=100,histtype='bar',orientation='vertical')
+plt.scatter(x,y,s=5,c='b',marker='o')
+plt.plot(x,y)
+plt.show
+
+plt.hold(True)
+
+subplot(121)
+plt.plot(x,y)
+plt.xlabel(bluh)
+plt.ylabel(blah)
+plt.title(bleh)
+plt.xlim(a,b)
+plt.ylim(a,b)
+
+subplot(122)
+plt.plot(x,y)
+
+plt.show()
+
+plt.autoscale(enable=True/False,axis='both')
+
+%matplotlib inline for inline plots in iPython.
+
+### colormaps and psd - power spectral density.
+
+plt.hold(True)
+plt.plot(a,b,'bo')
+plt.plot(c,d,'r') where bo & r are markers
+plt.show()
+
+import pyfits as pf 
+
+hdulist = pf.open('file.fits')
+hdulist.info()
+hdulist.close()
+
+len(hdulist[1].data) or
+hdulist[1].data.shape
+
+### using hdulist.writeto('')
+
+hdulist[0].header
+hdulist[0].data & (hdulist[0].data)[row][col1:col2]
+
+data = []
+for i in xrange(len(hdulist[1].data)):
+	tmp = (hdulist[1].data)[i][col1:col2]
+	data.append(float(tmp))
+
+import atpy
+tbl = atpy.Table('file.fits', hdu=arg)
+
+tbl.column_name or tbl['column name']
+# where the column names can be found using 
+# tbl.columns
+# tbl.describe()
+# tbl.keywords
+
+row = tbl.row(row_number)
+t_new = t.rows([row1,...,rowN]) or 
+t_new = t.where((t.attr1 > arg1) & (t.attr2 < arg2))
+
+use of len(tbl) or tbl.shape
+tbl.sort('column_name')
+
+and combining tables using 
+tbl1.append(tbl2)
+
+import pandas as pd
+data = pd.read_csv('file.csv')
+print data['column_name']
+redshift = data['z']
+redshift.mean() & redshift.median()
+len(redshift)
