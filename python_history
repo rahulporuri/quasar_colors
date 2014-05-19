@@ -16,11 +16,16 @@ reader = csv.reader(f,delimiter = ":")
 import numpy as np
 np.mean(list) or np.average(list) or np.median(list)
 
+x = np.linspace(-np.pi,np.pi,256,endpoint=True)
+
 import matplotlib.pyplot as plt
+
 plt.hist(data,bins=100,histtype='bar',orientation='vertical')
 plt.scatter(x,y,s=5,c='b',marker='o')
-plt.plot(x,y)
-plt.show
+plt.plot(x,y,color="blue",linewidth=2.5,linestyle='-')
+plt.show()
+
+plt.imshow()
 
 plt.hold(True)
 
@@ -28,9 +33,13 @@ subplot(121)
 plt.plot(x,y)
 plt.xlabel(bluh)
 plt.ylabel(blah)
-plt.title(bleh)
+plt.title('bleh')
 plt.xlim(a,b)
 plt.ylim(a,b)
+plt.xticks([],[])
+plt.yticks([],[])
+plt.legend(loc='upperleft')
+plt.text(x,y,s=5)
 
 subplot(122)
 plt.plot(x,y)
@@ -38,6 +47,22 @@ plt.plot(x,y)
 plt.show()
 
 plt.autoscale(enable=True/False,axis='both')
+
+from pylab import *
+plt.grid(True)
+plt.title('projections')
+subplot(11,projection="aitoff")
+plt.scatter(ra,dec,s=5,c='')
+# note : ra and dec should be in radians and not degrees and ra should run from -np.pi to np.pi & dec from -np.pi/2 to np.pi/2
+# also, we can give a vector as an input to c to plot a heat map/color map!
+or use plt.gray()
+plt.show()
+other options are hammer, lambert, mollweide.
+
+subplot(111,polar='True')
+plt.scatter(theta,r,c='',s=5)
+plt.show()
+# theta range from 0 to 2*np.pi and redshift from 0,np.inf
 
 %matplotlib inline for inline plots in iPython.
 
@@ -59,13 +84,18 @@ hdulist[1].data.shape
 
 ### using hdulist.writeto('')
 
-hdulist[0].header
+hdulist[0].header or hdulist[0].header['RA/DEC']
 hdulist[0].data & (hdulist[0].data)[row][col1:col2]
 
 data = []
 for i in xrange(len(hdulist[1].data)):
 	tmp = (hdulist[1].data)[i][col1:col2]
 	data.append(float(tmp))
+
+convenience functions such as 
+getheader('foo.fits',0) or 
+getval('foo.fits','RA/DEC')
+getdata('foo.fits',1)
 
 import atpy
 tbl = atpy.Table('file.fits', hdu=arg)
@@ -92,3 +122,21 @@ print data['column_name']
 redshift = data['z']
 redshift.mean() & redshift.median()
 len(redshift)
+
+data.head() or data.tail()
+data.index
+data.columns or data.values
+
+data.sort_index(axis=1,ascending=False) or 
+data.sort(columns='B')
+
+data['A']
+data[0:3]
+data[:,['A','B']]
+
+data.iloc and data.iat
+
+data.fillna(value=#)
+pd.isnull(data)
+
+import pyspeckit
