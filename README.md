@@ -20,10 +20,11 @@ work so far -
 * histogram of redshift
 * python script, ipynb notebook and colors
 * original data uploaded.
+* median color code - not yet tested!
+* python_history file added which includes notes on numpy,matplotlib,atpy,pyfits,astropy,pandas,csv and other interesting libraries.
 
 to be done - 
 
-* median color code
 * template spectrum and simulated color-redshift relation
 * variation from the median color
 
@@ -31,9 +32,6 @@ to be done -
 
 * those anomolous (vertically aligned) data points in the color-redshift relations - apparently stars.
 * plot these on the sky - using aitoff and other projection types.
-* study the spectrum of these things - to confirm that they are indeed stars. do these stars belong to anything specific?
-
-* create a template.py file with commonly used plotting commands, commands to read/write data from/to files etc.
-* go through notes to remind self of any interesting commands/libraries found.
+* study the spectrum of these things - to confirm that they are indeed stars do these stars belong to anything specific?
 
 for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
