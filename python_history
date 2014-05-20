@@ -140,3 +140,5 @@ data.fillna(value=#)
 pd.isnull(data)
 
 import pyspeckit
+
+check out specutils/astropy. contribute to issues on specutils/astropy/sunpy 
