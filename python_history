@@ -11,7 +11,7 @@ with open('file.csv', 'r') as f:
 	for row in reader:
 		print row
 
-reader = csv.reader(f,delimiter = ":")
+data = csv.reader(f,delimiter = ":")
 
 import numpy as np
 np.mean(list) or np.average(list) or np.median(list)
