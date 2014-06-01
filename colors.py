@@ -55,3 +55,25 @@ plt.ylabel('i-z')
 plt.xlabel('redshift')
 
 plt.show()
+
+"""
+plt.hold(True)
+
+subplot(221)
+plt.xlim(-0.5,3)
+plt.ylim(-0.5,1.5)
+plt.scatter(u_g, g_r, s=4)
+
+subplot(222)
+plt.xlim(-1,2)
+plt.ylim(-0.5,1.5)
+plt.scatter(g_r, r_i, s=4)
+
+subplot(223)
+plt.xlim(-0.5,2)
+plt.ylim(-0.5,1)
+plt.scatter(r_i, i_z, s=4)
+
+subplot(224)
+
+"""

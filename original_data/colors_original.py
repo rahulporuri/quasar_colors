@@ -47,23 +47,23 @@ plt.hold(True)
 
 subplot(221)
 plt.ylim(-4,6)
-plt.scatter(redshift, u_g, s=4)
+plt.scatter(redshift, u_g, s=4,c=redshift)
 plt.ylabel('u-g')
 
 subplot(222)
 plt.ylim(-4,6)
-plt.scatter(redshift, g_r, s=4)
+plt.scatter(redshift, g_r, s=4,c=redshift)
 plt.ylabel('g-r')
 
 subplot(223)
 plt.ylim(-4,6)
-plt.scatter(redshift, r_i, s=4)
+plt.scatter(redshift, r_i, s=4,c=redshift)
 plt.ylabel('r-i')
 plt.xlabel('redshift')
 
 subplot(224)
 plt.ylim(-4,6)
-plt.scatter(redshift, i_z, s=4)
+plt.scatter(redshift, i_z, s=4,c=redshift)
 plt.ylabel('i-z')
 plt.xlabel('redshift')
 
@@ -122,5 +122,14 @@ plt.ylabel('i-z')
 plt.xlabel('redshift')
 
 plt.show()
+
+subplot(221)
+plt.scatter(u_g, g_r, s=4,c=redshift)
+
+subplot(222)
+plt.scatter(g_r, r_i, s=4,c=redshift)
+
+subplot(223)
+plt.scatter(r_i, i_z, s=4,c=redshift)
 
 """
