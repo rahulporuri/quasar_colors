@@ -23,15 +23,14 @@ work so far -
 * median color code - not yet tested!
 * python_history file added which includes notes on numpy,matplotlib,atpy,pyfits,astropy,pandas,csv and other interesting libraries.
 
+* data on the anomolous (vertically aligned) data points in the color-redshift relations have been reacquired, plotted on the sky.
+* their spectra were initially studied to reveal stellar nature but their classification/confirmation as quasars still aludes me!
+
 to be done - 
 
 * template spectrum and simulated color-redshift relation
 * variation from the median color
 
 * plot the spatial distribution of the quasars. replicate the plot available on the sdss site.
-
-* those anomolous (vertically aligned) data points in the color-redshift relations - apparently stars.
-* plot these on the sky - using aitoff and other projection types.
-* study the spectrum of these things - to confirm that they are indeed stars do these stars belong to anything specific?
 
 for help with markdown, refer to the [*mastering markdown guide*](https://guides.github.com/features/mastering-markdown/) by github.
