@@ -23,7 +23,7 @@ work so far -
 * median color code - not yet tested!
 * python_history file added which includes notes on numpy,matplotlib,atpy,pyfits,astropy,pandas,csv and other interesting libraries.
 * spatial distribution of the quasars plotted and for comparison, compared to the one available on the sdss site.
-* data on the anomolous (vertically aligned) data points in the color-redshift relations have been reacquired - data on their coordinates, color and spectra are now present - iPython notebooks containing the relevant codes and results are available.
+* data on the anomolous (vertically aligned) data points in the color-redshift relations have been reacquired - data on their coordinates, color and spectra are now present - iPython notebooks containing the relevant codes and results can be found [here](http://nbviewer.ipython.org/github/rahulporuri/quasar_colors/blob/master/sdss_anomalies/sdss%20quasar%20anomalies.ipynb) and [here](http://nbviewer.ipython.org/github/rahulporuri/quasar_colors/blob/master/sdss_anomalies/sdss_anomalies_spectra.ipynb).
 
 to be done - 
 
