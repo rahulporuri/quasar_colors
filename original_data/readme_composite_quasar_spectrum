@@ -1,0 +1,23 @@
+Title: Composite Quasar Spectra From the Sloan Digital Sky Survey  
+Authors: Vanden Berk D.E., Richards G.T., Bauer A., Strauss M.A., 
+         Schneider D.P., Heckman T.M., York D.G., Hall P.B., Fan X., Knapp G.R.,
+         Anderson S.F., Annis J., Bahcall N.A., Bernardi M., Briggs J.W., 
+         Brinkmann J., Brunner R., Burles S., Carey L., Castander F.J., 
+         Connolly A.J., Crocker J.H., Csabai I., Doi M., Finkbeiner D., 
+         Friedman S., Frieman J.A., Fukugita M., Gunn J.E., Hennessy G.S., 
+         Ivezic Z., Kent S., Kunszt P.Z., Lamb D.Q., Leger R.F., Long D.C., 
+         Loveday J., Lupton R.H., Meiksin A., Merelli A., Munn J.A., 
+         Newberg H.J., Newcomb M., Nichol R.C., Owen R., Pier J.R., Pope A., 
+         Rockosi C.M., Schlegel D.J., Siegmund W.A., Smee S., Snir Y., 
+         Stoughton C., Stubbs C., SubbaRao M., Szalay A.S., Szokoly G.P., 
+         Tremonti C., Uomoto A., Waddell P., Yanny B., Zheng W. 
+Table: Median Composite Quasar Spectrum
+================================================================================
+Byte-by-byte Description of file: datafile1.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label  Explanations
+--------------------------------------------------------------------------------
+   1-  6 F6.1   0.1nm   Wave   Wavelength in Angstroms
+   8- 13 F6.3   ---     FluxD  Relative flux density
+  15- 19 F5.3   ---   e_FluxD  The 68% semi-interquantile uncertainty in FluxD
+--------------------------------------------------------------------------------
